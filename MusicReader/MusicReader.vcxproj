@@ -126,15 +126,22 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Melody.cpp" />
     <ClCompile Include="MusicMaker.cpp" />
+    <ClCompile Include="MusicPlayer.cpp" />
+    <ClCompile Include="MusicReader.cpp" />
     <ClCompile Include="Note.cpp" />
+    <ClCompile Include="SongData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="notes.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IPlugin.h" />
     <ClInclude Include="Melody.h" />
     <ClInclude Include="MusicMaker.h" />
+    <ClInclude Include="MusicPlayer.h" />
+    <ClInclude Include="MusicReader.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="SongData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

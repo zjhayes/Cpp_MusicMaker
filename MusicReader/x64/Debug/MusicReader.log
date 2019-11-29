@@ -1,8 +1,7 @@
-﻿  main.cpp
-  Melody.cpp
-  MusicMaker.cpp
-  Note.cpp
+﻿  MusicPlayer.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
+  main.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(87,33): warning C4018: '<=': signed/unsigned mismatch
   Generating Code...
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\Note.cpp(18,10): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicMaker.cpp(46): warning C4715: 'MusicMaker::getNoteByPitch': not all control paths return a value
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
   MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
