@@ -1,0 +1,8 @@
+﻿  main.cpp
+  Melody.cpp
+  MusicMaker.cpp
+  Note.cpp
+  Generating Code...
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\Note.cpp(18,10): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicMaker.cpp(46): warning C4715: 'MusicMaker::getNoteByPitch': not all control paths return a value
+  MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
