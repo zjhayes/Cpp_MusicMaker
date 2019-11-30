@@ -18,7 +18,7 @@ protected:
 
 	void loadSongs();
 	void runSongMenu();
-	void runOptionMenu();
+	bool runOptionMenu();
 	void runPluginsMenu();
 	int takeUserInput(unsigned long numberOfChoices);
 

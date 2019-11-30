@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "MusicMaker.h"
 
 // Base class
 class IPlugin {

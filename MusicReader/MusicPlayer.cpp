@@ -9,7 +9,12 @@ MusicPlayer::MusicPlayer()
 // Run program.
 void MusicPlayer::run()
 {
-	runOptionMenu();
+	bool exit;
+
+	do
+	{
+		exit = runOptionMenu();
+	} while (!exit);
 }
 
 // Loads songs into Melody repo.
@@ -37,9 +42,11 @@ void MusicPlayer::runSongMenu()
 	songs[choice].playSong();
 }
 
-// List off all options available to users.
-void MusicPlayer::runOptionMenu()
+// List off all options available to users, returns true if exited.
+bool MusicPlayer::runOptionMenu()
 {
+	std::cout << std::endl << "--MAIN MENU--" << std::endl << std::endl;
+
 	int index = 1;
 
 	std::cout << index++ << ". Play a song." << std::endl;
@@ -50,10 +57,15 @@ void MusicPlayer::runOptionMenu()
 		std::cout << index++ << ". Run a plugin." << std::endl;
 	}
 
+	std::cout << "Enter '0' to exit the program." << std::endl;
+
 	int choice = takeUserInput(index);
 
 	switch (choice)
 	{
+	case 0:
+		return true;
+		break;
 	case 1:
 		runSongMenu();
 		break;
@@ -62,29 +74,36 @@ void MusicPlayer::runOptionMenu()
 		break;
 	}
 
+	return false; // Do not exit.
 }
 
-// List plugins by their description.
+// List plugins by their description, take user input.
 void MusicPlayer::runPluginsMenu()
 {
+	std::cout << "--PLUGINS--" << std::endl << std::endl;
 	int index = 1;
 
+	// Print plugin descriptions to console for user to choose from.
 	for (auto& plugin : plugins)
 	{
 		std::cout << index++ << ". " << plugin->getDescription() << std::endl;
 	}
+
+	int choice = takeUserInput(index) - 1; // One less than printed index.
+	
+	plugins[choice]->run(); // Run plugin.
 }
 
 // Take input and validate that choice is legal.
 int MusicPlayer::takeUserInput(unsigned long numberOfChoices)
 {
 	int userInput;
-	std::cout << "Choose an option: ";
+	std::cout << std::endl << "Choose an option: ";
 	std::cin >> userInput;
 	std::cin.clear();
 	std::cin.ignore(INT_MAX, '\n');
-
-	if (userInput > 0 && userInput <= numberOfChoices)
+	
+	if (userInput > 0 && userInput < numberOfChoices)
 	{
 		std::cout << std::endl;
 		return userInput;

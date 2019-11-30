@@ -1,7 +1,4 @@
 ﻿  MusicPlayer.cpp
 C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
-  main.cpp
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(87,33): warning C4018: '<=': signed/unsigned mismatch
-  Generating Code...
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(106,33): warning C4018: '<': signed/unsigned mismatch
   MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
