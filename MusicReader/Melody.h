@@ -14,11 +14,13 @@ private:
 	std::string name;
 	std::vector<Note> song;
 	std::vector<Beat> time;
+	std::vector<int> octaves;
 
 public:
 
 	void playSong();
 	void addNote(Note _note, Beat _beat);
+	void addNote(Note _note, Beat _beat, int _octave);
 	std::string getName() const;
 	void setName(std::string _name);
 	std::vector<Note> getSong() const;

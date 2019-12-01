@@ -3,7 +3,7 @@
 // Zachary Hayes - October 10th, 2019 - zachary.j.hayes@gmail.com
 
 #include "MusicPlayer.h"
-#include "MusicReader.h"
+#include "MusicReader/MusicReader.h"
 
 int main()
 {

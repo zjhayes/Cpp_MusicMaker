@@ -27,13 +27,13 @@
     <ClCompile Include="MusicMaker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MusicReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SongData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MusicPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicReader\MusicReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -55,14 +55,17 @@
     <ClInclude Include="IPlugin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MusicReader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SongData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MusicPlayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MusicReader\MusicReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MusicReader\MyMelodies\test.txt" />
   </ItemGroup>
 </Project>

@@ -12,8 +12,15 @@ void Melody::playSong()
 // Add note and duration to end of Melody.
 void Melody::addNote(Note _note, Beat _beat)
 {
+	addNote(_note, _beat, 1); // Default octave set to 1.
+}
+
+// Add note, duration and octave to end of Melody.
+void Melody::addNote(Note _note, Beat _beat, int _octave)
+{
 	song.push_back(_note);
-	time.push_back(WHOLE);
+	time.push_back(_beat);
+	octaves.push_back(_octave);
 }
 
 std::string Melody::getName() const

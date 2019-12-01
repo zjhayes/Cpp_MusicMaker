@@ -1,4 +1,5 @@
-﻿  MusicPlayer.cpp
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(106,33): warning C4018: '<': signed/unsigned mismatch
+﻿  MusicReader.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(6,7): warning C4101: 'valid': unreferenced local variable
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(73,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(74,65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
