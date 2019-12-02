@@ -11,7 +11,7 @@ enum Beat
 	WHOLE = 3200,
 	HALF = 1600,
 	QUARTER = 800,
-	EIGHT = 400
+	EIGHTH = 400
 };
 
 class Note

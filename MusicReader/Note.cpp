@@ -25,7 +25,7 @@ void Note::setPitch(std::string _pitch)
 
 std::string Note::getPitch() const
 {
-	return std::string();
+	return pitch;
 }
 
 void Note::setFrequency(int _frequency)

@@ -24,21 +24,23 @@ void MusicMaker::loadNotes()
 
 		std::cout << pitch << " " << frequency << std::endl;
 
-		Note newNote = Note(pitch, stoi(frequency));
+		Note* newNote = new Note(pitch, stoi(frequency));
 
 		scale.push_back(newNote);
 	}
 } // Frequencies of notes thanks to https://www.youtube.com/watch?v=zVV9CmzL-Go
 
 // Returns Note object of a given pitch notation.
-Note MusicMaker::getNoteByPitch(std::string _pitch)
+Note* MusicMaker::getNoteByPitch(std::string _pitch)
 {
 	for (auto& note : scale)
 	{
 		// If the correct pitch, return Note object.
-		if (note.getPitch().compare(_pitch))
+		if (note->getPitch().compare(_pitch) == 0)
 		{
 			return note;
 		}
 	}
+
+	throw pitch_not_found();
 }

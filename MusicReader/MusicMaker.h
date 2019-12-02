@@ -14,13 +14,22 @@ class MusicMaker
 protected:
 
 	const std::string NOTE_REPOSITORY_PATH = "notes.csv";
-	std::vector<Note> scale;
+	std::vector<Note*> scale;
 	void loadNotes();
 
 public:
 
 	MusicMaker();
-	Note getNoteByPitch(std::string);
+	Note* getNoteByPitch(std::string);
+};
+
+// Custom exception when file can't be found.
+struct pitch_not_found : public std::exception
+{
+	const char* what() const throw ()
+	{
+		return "Can't find the specified pitch.";
+	}
 };
 
 #endif

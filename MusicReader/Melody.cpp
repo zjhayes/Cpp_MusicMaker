@@ -3,20 +3,20 @@
 // Plays each Note in a song, taking the duration from the time array.
 void Melody::playSong()
 {
-	for (Note& note : song)
+	for (Note* note : song)
 	{
-		note.play(time.front());
+		note->play(time.front());
 	}
 }
 
 // Add note and duration to end of Melody.
-void Melody::addNote(Note _note, Beat _beat)
+void Melody::addNote(Note* _note, Beat _beat)
 {
 	addNote(_note, _beat, 1); // Default octave set to 1.
 }
 
 // Add note, duration and octave to end of Melody.
-void Melody::addNote(Note _note, Beat _beat, int _octave)
+void Melody::addNote(Note* _note, Beat _beat, int _octave)
 {
 	song.push_back(_note);
 	time.push_back(_beat);
@@ -33,12 +33,12 @@ void Melody::setName(std::string _name)
 	name = _name;
 }
 
-std::vector<Note> Melody::getSong() const
+std::vector<Note*> Melody::getSong() const
 {
 	return song;
 }
 
-void Melody::setSong(std::vector<Note> _song)
+void Melody::setSong(std::vector<Note*> _song)
 {
 	song = _song;
 }

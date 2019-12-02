@@ -1,5 +1,5 @@
-﻿  MusicReader.cpp
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(6,7): warning C4101: 'valid': unreferenced local variable
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(73,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.cpp(74,65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  MusicMaker.cpp
+  Note.cpp
+  Generating Code...
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\Note.cpp(18,10): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
   MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
