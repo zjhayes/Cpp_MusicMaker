@@ -1,5 +1,4 @@
-﻿  MusicMaker.cpp
-  Note.cpp
-  Generating Code...
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\Note.cpp(18,10): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
+﻿  MusicPlayer.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(103,33): warning C4018: '<': signed/unsigned mismatch
   MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe

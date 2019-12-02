@@ -16,11 +16,11 @@ protected:
 	std::vector<Melody> songs;
 	std::vector<IPlugin*> plugins;
 
-	void loadSongs();
 	void runSongMenu();
 	bool runOptionMenu();
 	void runPluginsMenu();
 	int takeUserInput(unsigned long numberOfChoices);
+	void loadPluginSongs();
 
 public:
 

@@ -14,7 +14,11 @@ void MusicReader::run()
 	{
 		std::vector<std::string> rawNoteData = readFile(file);
 		Melody* newMelody = parseDataIntoMelody(rawNoteData);
-		newMelody->playSong();
+
+		// Request song title from user.
+		newMelody->setName(requestSongTitle());
+
+		pluginSongs.push_back(newMelody);
 	}
 	catch (const std::exception & exc)
 	{
@@ -24,10 +28,34 @@ void MusicReader::run()
 
 }
 
+// Ask user for title of song.
+std::string MusicReader::requestSongTitle()
+{
+	std::string title;
+	std::cout << "Name of song: ";
+	getline(std::cin, title);
+
+	if (std::cin.fail() || title.empty())
+	{
+		std::cout << "Invalid input, try again. ";
+		return requestSongTitle();
+	}
+
+	return title;
+}
+
 // Returns the description of this plugin, which is shown in the menu.
 std::string MusicReader::getDescription()
 {
 	return "Music Reader - play music from text files.";
+}
+
+// Return and erase songs from vector.
+std::vector<Melody*> MusicReader::getPluginSongs()
+{
+	std::vector<Melody*> _pluginSongs = pluginSongs;
+	pluginSongs.clear();
+	return _pluginSongs;
 }
 
 // Requests file name from user.

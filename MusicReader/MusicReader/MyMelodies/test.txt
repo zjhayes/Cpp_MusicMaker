@@ -1,10 +1,3 @@
-A
-B
-C
-D
-E
-F
-G
 E
 D
 C
@@ -16,10 +9,10 @@ X
 D
 D
 D
-X,Q
-E,Q
-G,Q
-G,Q
+X
+E
+G
+G
 X,Q
 E,Q
 D,Q
@@ -31,6 +24,6 @@ E,Q
 E,Q
 D,Q
 D,Q
-E,Q,2
-D,Q,2
-C,Q,2
+E,Q,1
+D,Q,1
+C

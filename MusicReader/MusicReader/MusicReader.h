@@ -21,6 +21,7 @@ class MusicReader : public IPlugin
 {
 protected:
 	std::string requestFile();
+	std::vector<Melody*> pluginSongs;
 	std::vector<std::string> readFile(std::string);
 	std::string* parseLine(std::string);
 	MusicMaker music = MusicMaker();
@@ -28,9 +29,11 @@ protected:
 	Melody* parseDataIntoMelody(std::vector<std::string>);
 	Note* translateToNote(std::string);
 	Beat translateToBeat(std::string);
+	std::string requestSongTitle();
 public:
 	void run();
 	std::string getDescription();
+	std::vector<Melody*> getPluginSongs();
 
 };
 

@@ -5,7 +5,11 @@ void Melody::playSong()
 {
 	for (Note* note : song)
 	{
-		note->play(time.front());
+		
+		note->play(time.front(), octaves.front());
+
+		time.erase(time.begin());
+		octaves.erase(octaves.begin());
 	}
 }
 

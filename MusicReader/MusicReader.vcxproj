@@ -129,7 +129,6 @@
     <ClCompile Include="MusicPlayer.cpp" />
     <ClCompile Include="MusicReader\MusicReader.cpp" />
     <ClCompile Include="Note.cpp" />
-    <ClCompile Include="SongData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="notes.csv" />
@@ -141,7 +140,6 @@
     <ClInclude Include="MusicPlayer.h" />
     <ClInclude Include="MusicReader\MusicReader.h" />
     <ClInclude Include="Note.h" />
-    <ClInclude Include="SongData.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="MusicReader\MyMelodies\test.txt" />

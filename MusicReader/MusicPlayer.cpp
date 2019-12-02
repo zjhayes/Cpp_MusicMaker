@@ -1,9 +1,8 @@
 #include "MusicPlayer.h"
-#include "SongData.h"
 
 MusicPlayer::MusicPlayer()
 {
-	loadSongs();
+	
 }
 
 // Run program.
@@ -17,24 +16,22 @@ void MusicPlayer::run()
 	} while (!exit);
 }
 
-// Loads songs into Melody repo.
-void MusicPlayer::loadSongs()
-{
-	SongData data = SongData();
-	for (auto& song : data.getSongs())
-	{
-		songs.push_back(song);
-	}
-}
-
 // Print Melody repo to console.
 void MusicPlayer::runSongMenu()
 {
+	loadPluginSongs();
+
+	if (songs.empty())
+	{
+		std::cout << "No songs in Music Library." << std::endl;
+		return;
+	}
+
 	int index = 1;
 
 	for (auto& song : songs)
 	{
-		std::cout << index << ". " << song.getName() << std::endl;
+		std::cout << index++ << ". " << song.getName() << std::endl;
 	}
 
 	int choice = takeUserInput(index) - 1; // One less than printed index.
@@ -118,4 +115,17 @@ int MusicPlayer::takeUserInput(unsigned long numberOfChoices)
 void MusicPlayer::installPlugin(IPlugin* _plugin)
 {
 	plugins.push_back(_plugin);
+}
+
+// Add plugin songs to music library.
+void MusicPlayer::loadPluginSongs()
+{
+	for (auto& plugin : plugins)
+	{
+		std::vector<Melody*> pluginSongs = plugin->getPluginSongs();
+		for (auto song : pluginSongs)
+		{
+			songs.push_back(*song);
+		}
+	}
 }
