@@ -3,13 +3,14 @@
 // Plays each Note in a song, taking the duration from the time array.
 void Melody::playSong()
 {
+	int index = 0;
+
 	for (Note* note : song)
 	{
 		
-		note->play(time.front(), octaves.front());
+		note->play(time[index], octaves[index]);
 
-		time.erase(time.begin());
-		octaves.erase(octaves.begin());
+		index++;
 	}
 }
 

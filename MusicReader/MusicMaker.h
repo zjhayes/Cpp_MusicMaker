@@ -9,7 +9,7 @@
 #include <iostream>
 #include <vector>
 
-class MusicMaker
+static class MusicMaker
 {
 protected:
 

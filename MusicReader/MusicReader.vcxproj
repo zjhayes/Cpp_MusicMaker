@@ -23,6 +23,7 @@
     <ProjectGuid>{DDB3A558-C714-4F53-8C2F-137887CB7552}</ProjectGuid>
     <RootNamespace>MusicReader</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MusicMaker</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,6 +129,8 @@
     <ClCompile Include="MusicMaker.cpp" />
     <ClCompile Include="MusicPlayer.cpp" />
     <ClCompile Include="MusicReader\MusicReader.cpp" />
+    <ClCompile Include="MusicTranslator\MusicTranslator.cpp" />
+    <ClCompile Include="MusicWriter\MusicWriter.cpp" />
     <ClCompile Include="Note.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,10 +142,13 @@
     <ClInclude Include="MusicMaker.h" />
     <ClInclude Include="MusicPlayer.h" />
     <ClInclude Include="MusicReader\MusicReader.h" />
+    <ClInclude Include="MusicTranslator\MusicTranslator.h" />
+    <ClInclude Include="MusicWriter\MusicWriter.h" />
     <ClInclude Include="Note.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="MusicReader\MyMelodies\test.txt" />
+    <Text Include="MusicReader\MyMelodies\letitgo.txt" />
+    <Text Include="MusicReader\MyMelodies\mary.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -100,7 +100,7 @@ int MusicPlayer::takeUserInput(unsigned long numberOfChoices)
 	std::cin.clear();
 	std::cin.ignore(INT_MAX, '\n');
 	
-	if (userInput > 0 && userInput < numberOfChoices)
+	if (userInput >= 0 && userInput < numberOfChoices)
 	{
 		std::cout << std::endl;
 		return userInput;

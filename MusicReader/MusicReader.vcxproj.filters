@@ -33,6 +33,12 @@
     <ClCompile Include="MusicReader\MusicReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MusicWriter\MusicWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicTranslator\MusicTranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="notes.csv">
@@ -58,8 +64,15 @@
     <ClInclude Include="MusicReader\MusicReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MusicWriter\MusicWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicTranslator\MusicTranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="MusicReader\MyMelodies\test.txt" />
+    <Text Include="MusicReader\MyMelodies\mary.txt" />
+    <Text Include="MusicReader\MyMelodies\letitgo.txt" />
   </ItemGroup>
 </Project>

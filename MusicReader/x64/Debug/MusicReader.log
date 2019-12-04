@@ -1,4 +1,16 @@
-﻿  MusicPlayer.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (MusicReader.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicMaker.h(24,2): warning C4091: 'static ': ignored on left of 'MusicMaker' when no variable is declared
 C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.h(30,2): warning C4091: 'static ': ignored on left of 'MusicPlayer' when no variable is declared
-C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicPlayer.cpp(103,33): warning C4018: '<': signed/unsigned mismatch
-  MusicReader.vcxproj -> C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\x64\Debug\MusicReader.exe
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.h(13,1): error C2011: 'MusicalEntity': 'struct' type redefinition
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.h(13): message : see declaration of 'MusicalEntity'
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.h(40,23): error C2011: 'file_not_found': 'struct' type redefinition
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.h(41): message : see declaration of 'file_not_found'
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.h(49,27): error C2011: 'error_reading_file': 'struct' type redefinition
+  MusicWriter.cpp
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicReader\MusicReader.h(50): message : see declaration of 'error_reading_file'
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicMaker.h(24,2): warning C4091: 'static ': ignored on left of 'MusicMaker' when no variable is declared
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.cpp(14,7): warning C4101: 'valid': unreferenced local variable
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.cpp(106,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\zacha\Google Drive\Programs\C++\MusicReader\Cpp_MusicMaker\MusicReader\MusicWriter\MusicWriter.cpp(107,65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
